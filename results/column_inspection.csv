@@ -1,0 +1,10 @@
+Column,Original data type,Missing values,Entire column empty,Numeric measurement column
+Output (S),int64,0,False,False
+Ia,float64,0,False,True
+Ib,float64,0,False,True
+Ic,float64,0,False,True
+Va,float64,0,False,True
+Vb,float64,0,False,True
+Vc,float64,0,False,True
+Unnamed: 7,float64,12001,True,False
+Unnamed: 8,float64,12001,True,False

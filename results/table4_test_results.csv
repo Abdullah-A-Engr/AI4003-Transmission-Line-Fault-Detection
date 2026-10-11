@@ -1,0 +1,5 @@
+Model,Accuracy,TN,False alarms,Missed faults,TP
+"Logistic regression, Set R",0.7263640149937526,1305,0,657,439
+"Logistic regression, Set Q",0.978758850478967,1299,6,45,1051
+Best linear SVM,0.7359433569346105,1305,0,634,462
+Best RBF SVM,0.9958350687213661,1301,4,6,1090

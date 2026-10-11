@@ -1,0 +1,3 @@
+Model,C,gamma,Validation accuracy,Support vectors
+Best linear SVM,0.1,—,0.7258333333333333,5849
+Best RBF SVM,100.0,1,0.9966666666666667,266

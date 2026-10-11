@@ -1,0 +1,5 @@
+Model,Actual 0 / Predicted 0 (TN),Actual 0 / Predicted 1 (false alarm),Actual 1 / Predicted 0 (missed fault),Actual 1 / Predicted 1 (TP),"Matrix row 0 [TN, false alarm]","Matrix row 1 [missed fault, TP]"
+"Logistic regression, Set R",1305,0,657,439,"[1305, 0]","[657, 439]"
+"Logistic regression, Set Q",1299,6,45,1051,"[1299, 6]","[45, 1051]"
+Best linear SVM,1305,0,634,462,"[1305, 0]","[634, 462]"
+Best RBF SVM,1301,4,6,1090,"[1301, 4]","[6, 1090]"

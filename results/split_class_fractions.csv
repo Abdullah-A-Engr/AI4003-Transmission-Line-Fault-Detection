@@ -1,0 +1,4 @@
+Split,Rows,Fault rows,No-fault rows,Fault fraction
+Train,7200,3317,3883,0.46069444444444446
+Validation,2400,1083,1317,0.45125
+Test,2401,1096,1305,0.4564764681382757
