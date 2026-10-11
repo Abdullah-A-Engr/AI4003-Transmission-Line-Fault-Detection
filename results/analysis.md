@@ -23,3 +23,16 @@ It is likely optimistic. Rows are consecutive samples, and the required random s
 ## 6.6 Which model would we deploy?
 
 Among these four tested models, the RBF SVM has the strongest test results: **99.58% accuracy, 6 missed faults, and 4 false alarms**. The Set Q logistic regression has 45 missed faults and 6 false alarms; the linear models miss substantially more faults. Based on the assignment's emphasis on missed faults and false alarms, the RBF SVM is the strongest candidate among the evaluated models. However, this dataset and random split do not certify a real relay: further event-level/time-based testing, engineering validation, and safety certification would be required before deployment.
+## Model Comparison and Practical Implications
+
+### Logistic Regression: Set R vs Set Q
+
+Set R uses the six standardised current and voltage measurements as input features. Set Q adds the squared versions of these features, allowing the model to represent some nonlinear relationships. On the test set, Set R achieved 72.64% accuracy, while Set Q achieved 97.88%. Set Q also missed 45 faults, compared with 657 for Set R. These results show that the additional squared features substantially improved performance on this dataset.
+
+### Linear SVM vs RBF SVM
+
+The linear SVM achieved 73.59% test accuracy, whereas the RBF SVM achieved 99.58%. The RBF kernel can represent nonlinear decision boundaries, which may better separate fault and no-fault observations when their relationships are not linear. The RBF SVM missed 6 faults on the test set, compared with 634 for the linear SVM. This indicates that the RBF model performed considerably better on the supplied test data.
+
+### Practical Implications
+
+In transmission-line fault detection, a missed fault is important because a real fault may go undetected. False alarms also matter because they can trigger unnecessary inspections or operational responses. Therefore, model evaluation should consider confusion matrices and both types of classification error, rather than accuracy alone. Although the RBF SVM performed best in this experiment, these results do not establish that it is ready for deployment in a real protection system. Further testing with representative operating conditions and independent data would be necessary.
