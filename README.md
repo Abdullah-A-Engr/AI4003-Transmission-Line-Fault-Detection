@@ -26,8 +26,6 @@ Assignment_2_Fault_Detection/
 │   ├── SVM validation table, comparison plot, and selected models
 │   ├── Final test table and confusion matrices
 │   ├── Task 6 analysis
-│   ├── Medium blog draft
-│   └── LinkedIn post draft
 ├── app/
 │   └── app.py
 ├── requirements.txt
